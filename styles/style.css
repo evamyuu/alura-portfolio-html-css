@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #6F4E37;
+    --secondary-color: #FED8B1;
+    --tertiary-color: #ECB176;
+    --hover-color: #A67B5B;
+
+    --primary-font: "Krona One", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
+
+body {
+    /* height: 100vh; Usar somente no inicio pra pegar 100% da pag */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-sizing: border-box;
+}
+
+strong {
+    color: var(--tertiary-color);
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu { 
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.container {
+    /* margin: 10% 15%; Utilizar o padding, apos remocao do height pra criar o espaco e para nao interferir no posiciosamento dos outros elementos */
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__content__title{
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+}
+
+.container__content__text{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+.container__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__links__link{
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--tertiary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+.container__links__subtitle{
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container__links__link:hover{
+    background-color: var(--hover-color);
+}
+
+.container__image{
+    width: 50%;
+}
+
+.footer {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content {
+        width: auto;
+    }
+
+}

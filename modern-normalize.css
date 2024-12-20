@@ -1,0 +1,43 @@
+/* Garante box-sizing consistente */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margens padrão */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Define uma altura base para o body */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove sublinhado de links sem prejudicar acessibilidade */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Define comportamentos padrão mais consistentes */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove estilos padrão de botões */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
